@@ -4,9 +4,11 @@ import { TopMeme, TopMemeByReaction, REACTION } from '../lib/data.js';
 
 // Fonction qui marche:
 //    TopMeme
+//    TopMemeByReaction
 
 function init() {
-  let top10 = TopMeme();
+  // let top10 = TopMeme();
+  let top10 = TopMemeByReaction(REACTION[0]);
   console.log('top10', top10);
   for (let i = 0; i < top10.length; i++) {
     let div = $('<div>');
