@@ -2,6 +2,9 @@
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/js-n6fbz8)
 
+/!\ UI code que dans le dossier /ui, index.js:init() est appelée en premier.
+/!\ N'utiliser que les fonctions dans lib/data.js /!\
+
 <h2> Structure d'un message: </h2>
 <table>
 	<tr>
