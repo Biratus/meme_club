@@ -1,0 +1,11 @@
+{
+  "name": "js",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "date-fns": "^2.29.3",
+    "fb-chat-api": "^10.4.19",
+    "fs": "^0.0.2",
+    "jquery": "^3.6.3"
+  }
+}

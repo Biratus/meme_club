@@ -1,0 +1,19 @@
+h1,
+h2 {
+  font-family: Lato;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#app {
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+}
+#app > div {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
