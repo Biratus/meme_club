@@ -10,6 +10,19 @@ export const PY_BEFORE = '1484120813';
 export const PY_NOW = '100076608136245';
 export const MEME_CLUB = 1712178942225974;
 
-console.log("Processing data...");
+console.log('Processing data...');
+addBasicUserData();
 runProcessors(fullHistory);
-console.log(`Data processed: ${fullHistory.length} messages, ${fullAttachments.length} medias`);
+console.log(
+  `Data processed: ${fullHistory.length} messages, ${fullAttachments.length} medias`
+);
+
+function addBasicUserData() {
+  for (let uId in users) {
+    let u = users[uId];
+    u.nbMeme = 0;
+    u.nbReaction = 0;
+    u.nbNotMeme = 0;
+    u.nbMessage = 0;
+  }
+}

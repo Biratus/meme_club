@@ -1,10 +1,16 @@
 import $ from 'jquery';
 import { fullHistory } from '../lib/fetch.js';
-import { TopMeme, TopMemeByReaction, REACTION } from '../lib/data.js';
+import {
+  TopMeme,
+  TopMemeByReaction,
+  TopPosteursDeMeme,
+  REACTION,
+} from '../lib/data.js';
 
 // Fonction qui marche:
 //    TopMeme
 //    TopMemeByReaction
+//    TopPosteursDeMeme
 
 function init() {
   // let top10 = TopMeme();
