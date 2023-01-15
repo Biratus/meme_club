@@ -1,6 +1,7 @@
 import './style.css';
-import { fullHistory } from './fetch.js';
+import fetch from './fetch.js';
 import ui from './ui';
 
-console.log('running ui');
+fetch();
+console.log('Running ui');
 ui();
