@@ -65,6 +65,20 @@
 	</tr>
 	<tr>
 		<td><code>type</code></td>
-		<td>For this event type, this will always be the string <code>"message"</code>.</td>
+		<td></td>
 	</tr>
   </table>
+  <h2>Structure d'un <code>attachment</code></h2>
+  Les attachments varient en fonction de la valeur de leur attribut <code>type</code>
+  
+| Attachment Type    | Fields                                                                                                                                                    |
+| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `"sticker"`        | `ID`, `url`, `packID`, `spriteUrl`, `spriteUrl2x`, `width`, `height`, `caption`, `description`, `frameCount`, `frameRate`, `framesPerRow`, `framesPerCol` |
+| `"file"`           | `ID`, `filename`, `url`, `isMalicious`, `contentType`                                                                                                     |
+| `"photo"`          | `ID`, `filename`, `thumbnailUrl`, `previewUrl`, `previewWidth`, `previewHeight`, `largePreviewUrl`, `largePreviewWidth`, `largePreviewHeight`             |
+| `"animated_image"` | `ID`, `filename`, `previewUrl`, `previewWidth`, `previewHeight`, `url`, `width`, `height`                                                                 |
+| `"video"`          | `ID`, `filename`, `previewUrl`, `previewWidth`, `previewHeight`, `url`, `width`, `height`, `duration`, `videoType`                                        |
+| `"audio"`          | `ID`, `filename`, `audioType`, `duration`, `url`, `isVoiceMail`                                                                                           |
+| `"location"`       | `ID`, `latitude`, `longitude`, `image`, `width`, `height`, `url`, `address`                                                                               |
+| `"share"`          | `ID`, `url`, `title`, `description`, `source`, `image`, `width`, `height`, `playable`, `duration`, `playableUrl`, `subattachments`, `properties`          |
+
