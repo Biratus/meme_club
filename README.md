@@ -82,3 +82,18 @@
 | `"location"`       | `ID`, `latitude`, `longitude`, `image`, `width`, `height`, `url`, `address`                                                                               |
 | `"share"`          | `ID`, `url`, `title`, `description`, `source`, `image`, `width`, `height`, `playable`, `duration`, `playableUrl`, `subattachments`, `properties`          |
 
+  <h2>Structure d'un <code>user</code></h2>
+  Les user sont accessible via la liste des utilisateurs <code>users</code> dans <code>fetch.js</code> ou par les différentes méthodes retrounant des listes d'user.
+  
+| Field    | Description                                                                                                                                                    |
+| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `"id"`        | Identifiant unique de l'utilisateur |
+| `"name"`        | Nom + prénom de l'utilisateur |
+| `"firstName"`        | Prénom de l'utilisateur |
+| `"nickname"`        | Surnom de l'utilisateur |
+| `"thumbSrc"`        | URL de la photo de l'utilisateur |
+
+
+
+
+
