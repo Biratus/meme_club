@@ -42,17 +42,10 @@ function init() {
   }
 }
 
-function videoFromAttachment({ previewUrl, previewWidth, previewHeight }) {
-  let div = $('<div>');
-  div.append('<span>Vidéos non supportées pour le moment...</span>');
-  div.append(
-    imageFromAttachment({
-      url: previewUrl,
-      width: previewWidth,
-      height: previewHeight,
-    })
+function videoFromAttachment({ filename, width, height }) {
+  return $(
+    `<video controls src="https://github.com/Biratus/meme_club/raw/main/videos/${filename}" width="${width}" height=${height}>`
   );
-  return div;
 }
 
 function imageFromAttachment({ url, width, height }) {
