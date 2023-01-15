@@ -31,7 +31,7 @@
 		<td>Nombre de réaction : Object, clé (reaction):string, value (amount):integer
 	</tr>
   <tr>
-		<td><code>reactionNb</code></td>
+		<td><code>nbReaction</code></td>
 		<td>Nombre de réaction total : :integer</td>
 	</tr>
   <!-- Originals -->
@@ -92,8 +92,8 @@
 | `"firstName"`        | Prénom de l'utilisateur |
 | `"nickname"`        | Surnom de l'utilisateur |
 | `"thumbSrc"`        | URL de la photo de l'utilisateur |
-
-
-
-
-
+| `"nbMeme"`        | Nombre de media envoyés |
+| `"nbReaction"`        | Nombre de réaction reçue |
+| `"nbNotMeme"`        | Nombre de message non medias envoyés |
+| `"nbMessage"`        | Nomnbre de messages envoyés |
+| `"messages"`        | Liste des messages envoyés. Que dans le cas d'un utilisateur inconnu |
